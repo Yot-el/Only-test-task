@@ -1,0 +1,32 @@
+@import url('button.css') layer(button);
+@import url('map.css') layer(map);
+@import url('page.css') layer(page);
+
+@layer page, map, button;
+
+:root {
+  --background-color: #020F20;
+  --font-color: #FFFFFF;;
+
+  --button-primary: #3877EE;
+  --button-secondary: #6ABF4B;
+
+  --min-window-width: 1280px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
